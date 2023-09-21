@@ -1,9 +1,10 @@
 (async () => {
+  const SERVER_URL = 'http://localhost:3000/api/students'
   let studentsList = []; // Определение и инициализация массива студентов
   // Функция для получения данных студентов с сервера
   async function fetchStudentsFromServer() {
     try {
-      const response = await fetch('http://localhost:3000/api/students');
+      const response = await fetch(SERVER_URL);
 
       if (response.ok) {
         const studentsData = await response.json();
@@ -157,6 +158,7 @@
   const birthdayInput = form.querySelector('#birth-date');
   const studyStartInput = form.querySelector('#start-year');
   const facultyInput = form.querySelector('#faculty');
+  let errorsContainer = form.querySelector('#errors');
 
   // функция очистки таблицы
   function resetTbody() {
@@ -169,7 +171,7 @@
   // Функция для отправки данных на сервер
   async function saveStudentToServer(studentData) {
     try {
-      const response = await fetch('http://localhost:3000/api/students', {
+      const response = await fetch(SERVER_URL, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -190,6 +192,25 @@
     }
   }
 
+  // Функция для отображения ошибок
+  function displayErrors(errors) {
+    // Очищаем контейнер с ошибками перед отображением новых
+    errorsContainer.innerHTML = '';
+
+    // Создаем элемент <ul> для отображения ошибок в виде списка
+    const errorList = document.createElement('ul');
+
+    // Добавляем каждую ошибку в список
+    errors.forEach((error) => {
+      const errorItem = document.createElement('li');
+      errorItem.textContent = error;
+      errorList.appendChild(errorItem);
+    });
+
+    // Добавляем список ошибок в контейнер
+    errorsContainer.appendChild(errorList);
+  }
+
   // Обработчик отправки формы
   form.addEventListener('submit', async (event) => {
     // Отмена действия по умолчанию (отправки формы)
@@ -206,21 +227,44 @@
 
     const errors = [];
 
+    if (!name.length) {
+      errors.push('Введите имя');
+    }
+
+    if (!surname.length) {
+      errors.push('Введите фамилию');
+    }
+
+    if (!lastname.length) {
+      errors.push('Введите отчество');
+    }
+
     if (birthday < new Date('1900-01-01')) {
       errors.push('Дата рождения должна быть не ранее 01.01.1900');
     } else if (birthday > new Date()) {
       errors.push('Дата рождения не может быть в будущем');
+    } else if (!birthdayInput.value) {
+      errors.push('Введите дату рождения');
     }
 
     if (studyStart < 2000 || studyStart > currentYear) {
       errors.push(`Год начала обучения должен быть в диапазоне от 2000 до ${currentYear}`);
+    } else if (!studyStart) {
+      errors.push('Введите дату начала обучения');
+    }
+
+    if (!faculty.length) {
+      errors.push('Введите факультет');
     }
 
     // Если есть ошибки, вывести их и прервать выполнение функции
     if (errors.length) {
-      alert(errors.join('\n'));
+      // Вызывайте функцию для отображения ошибок
+      displayErrors(errors);
       return;
     }
+
+    errorsContainer.innerHTML = '';
 
     // Создание объекта студента и добавление его в массив
     const student = {
