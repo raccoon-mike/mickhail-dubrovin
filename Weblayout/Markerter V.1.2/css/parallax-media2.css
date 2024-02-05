@@ -1,0 +1,68 @@
+@media (min-width: 391px) {
+    /* .arbitr-block {
+        top: 10%;
+    } */
+
+    .parallax-1 {
+        /* top: 30%; */
+        bottom: 20%;
+    }
+
+    .parallax-2 {
+        top: 105%;
+    }
+}
+
+@media (min-width: 768px) {
+    /* .arbitr-block {
+
+        top: 40%;
+    } */
+
+    .hero-cercle {
+        width: 500px;
+        top: 0px;
+    }
+
+    /* .parallax-1 {
+
+        top: 25%;
+    } */
+
+    .parallax-2 {
+
+        top: 100%;
+    }
+
+    .effect-1 {
+        top: 0%;
+    }
+
+    .effect-2,
+    .effect-3 {
+        display: initial;
+    }
+
+    .effect-4,
+    .effect-5 {
+
+        top: 5%;
+        width: 130px;
+    }
+
+    .tv-container {
+        min-height: 100vh;
+    }
+
+    .tv-container,
+    .experience-container,
+    .duties-section {
+
+        background-attachment: fixed;
+    }
+
+    .divider {
+        display: block;
+    }
+
+}

@@ -1,0 +1,245 @@
+@media (min-width: 768px) {
+
+    .mb-100 {
+        margin-bottom: 100px !important;
+    }
+
+    /* .arbitr,
+    .glitch {
+        background: url('../img/arbitran-full.png') center bottom / 1500px no-repeat;
+    } */
+
+    .arbitr,
+    .glitch {
+        min-width: 30vw;
+        min-height: 50vh;
+    }
+
+    .hero,
+    .glitch-2 {
+        max-width: 700px;
+    }
+
+    .hero-question {
+        top: 125px;
+        font-size: 250px;
+        line-height: 200px;
+    }
+
+    .hero-title {
+        font-size: 62px;
+    }
+
+    .hero-subtitle {
+        font-size: 62px;
+        line-height: 58px;
+        width: 100%;
+    }
+
+    .hero-descr {
+        font-size: 30px;
+        bottom: 24px;
+    }
+
+    .experience-title,
+    .duties-title {
+        font-size: 56px;
+        line-height: 53px;
+        padding-top: 70px;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 50px;
+    }
+
+    .experience-subtitle {
+        font-size: 56px;
+        line-height: 53px;
+    }
+
+    .experience-descr {
+        font-size: 35px;
+        line-height: 31px;
+        width: 375px;
+        padding-left: 100px;
+    }
+
+    .bullet {
+        background: url('../img/bullet\ 1.webp') left center / 75px no-repeat;
+    }
+
+    .bullet-empty {
+        background: url('../img/bullet_empty\ 1.webp') left center / 75px no-repeat;
+    }
+
+    .experience {
+        justify-content: space-between;
+        padding: 0 50px;
+    }
+
+    .experience-text-1 {
+        letter-spacing: 3px;
+    }
+
+    .experience-text-2 {
+        color: black;
+        align-self: center;
+    }
+
+    .experience-box {
+        display: flex;
+        width: min-content;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 35px;
+        flex-direction: row;
+        margin-bottom: 35px;
+    }
+
+    .experience-box-2 {
+        width: fit-content;
+    }
+
+    .experience-section-3,
+    .experience-section-2,
+    .experience-section-1 {
+        justify-content: center;
+    }
+
+    .duties-descr {
+        position: relative;
+        padding-right: 100px;
+        padding-left: 3px;
+    }
+
+    /* .duties-descr::before {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: url('../img/bullet\ 180.webp') right center / 75px no-repeat;
+    } */
+
+    /* .bullet-right {
+        display: inline-block;
+        background: url('../img/bullet\ 180.webp') 100% center / 75px no-repeat;
+    } */
+
+    .duties-title {
+        width: 100%;
+        padding-left: 50px;
+        text-align: left;
+    }
+
+    .duties-box {
+        justify-content: space-between;
+        max-width: 850px;
+        width: min-content;
+    }
+
+    .duties-text {
+        width: 100%;
+        justify-content: initial;
+        margin-top: 0;
+    }
+
+    .duties-box {
+        margin-left: 50px;
+    }
+
+    .duties-descr.bullet-right {
+        background: url('../img/bullet\ 180.webp') right center / 75px no-repeat;
+    }
+
+    .duties-cont {
+        position: absolute;
+        width: max-content;
+        height: max-content;
+        right: -8%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50%;
+        margin: 0;
+    }
+
+    .duties {
+        display: block;
+        flex-wrap: initial;
+        justify-content: initial;
+    }
+
+    .offer-text {
+        justify-content: end;
+        margin: 0 0 0 auto;
+    }
+
+    .offer-title {
+        padding-left: 0;
+        padding-right: 50px;
+        text-align: right;
+    }
+
+    .offer-box {
+        margin-left: 0;
+        margin-right: 50px;
+        flex-direction: row-reverse;
+    }
+
+    .offer-descr {
+        padding-right: 3px;
+        padding-left: 100px;
+        text-align: right;
+    }
+
+    .offer-cont {
+        right: initial;
+        left: -8%;
+    }
+
+    .offer-section {
+        background-image: url('../img/kosmos_galaktika_vselennaia_140757_1920x1080.webp');
+    }
+
+}
+
+@media (min-width: 867px) {
+    .experience-section-1 {
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 939px) {
+    .experience-section-2 {
+        justify-content: space-between;
+    }
+
+    .experience-section-2 .experience-box {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1011px) {
+    .experience-section-3 {
+        justify-content: space-between;
+    }
+
+    .duties-cont {
+        width: 70%;
+    }
+
+    .duties-text {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1480px) {
+    .duties-box {
+        width: fit-content;
+    }
+
+    .duties-cont {
+        width: 50%;
+    }
+}
