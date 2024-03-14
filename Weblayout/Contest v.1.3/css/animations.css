@@ -1,0 +1,221 @@
+
+@media screen and (max-width:800px) {
+
+    .s3content {
+        z-index: 99;
+        position: relative
+    }
+
+    .s3title {
+        padding: 0;
+        max-width: 300px;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: left
+    }
+
+    .rules-section .dateCover h3.s3-title {
+        display: block;
+        font-size: 35px;
+    }
+
+    .section-title2 {
+        display: none;
+    }
+
+    .rules-section {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    .rules-section .container {
+        overflow: visible
+    }
+
+    .s3info {
+        max-width: 100%;
+        position: relative;
+        top: auto;
+        right: auto;
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0);
+        margin-top: 40px;
+        font-size: 30px
+    }
+
+    .s3info-1 {
+        margin-top: 20px;
+    }
+
+    .table .s3info, .s4Right .s4info {
+        display: none
+    }
+
+    .s4Right .s3info {
+        right: 0;
+        bottom: 0;
+    }
+    .s4Right .s3info .s3infoInner{
+        padding: 30px 10px;
+    }
+
+    .section4 .s3info p {
+        font-size: 18px;
+    }
+
+    .s3infoMobile {
+        display: block
+    }
+
+    .s3infoInner {
+        opacity: 1;
+        visibility: visible;
+        padding: 30px
+    }
+
+    .s3info a {
+        margin-top: 20px
+    }
+
+    .table .s3info {
+        right: auto;
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0)
+    }
+
+    .section4 .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column
+    }
+
+    .s4Left,
+    .s4Right {
+        display: block;
+        width: 96%;
+        margin-right: auto;
+        margin-left: auto
+    }
+
+    .s4LeftBot {
+        position: relative
+    }
+
+    .s4LeftBotInner {
+        box-sizing: border-box;
+        padding: 20px
+    }
+
+    .s4Left {
+        margin-left: 2%
+    }
+
+    .s4Right {
+        margin-top: 0
+    }
+
+    .s4LeftBot {
+        margin-top: 2%
+    }
+
+}
+
+@media screen and (max-width: 660px) {
+    .dateCover {
+        max-width: 450px;
+        padding: 30px;
+        margin-bottom: 0px;
+    }
+
+    .dateCover:first-child {
+        margin-bottom: 100px;
+    }
+
+    .dateContent h2 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .s4Right .s3info {
+        margin-top: 20px;
+    }
+
+    .rules-section .s3infoInner {
+        padding: 20px 10px;
+    }
+
+    .s3title {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+        padding-right: 30%
+    }
+
+    .s3title h3 {
+        font-size: 40px;
+        padding-left: 20px;
+    }
+
+    .section4 {
+        box-sizing: border-box;
+        padding-left: 20px;
+        padding-right: 20px
+    }
+
+    .section4 .container {
+        padding: 0;
+        width: 100%
+    }
+
+    .s3infoMobile {
+        max-width: 500px;
+        margin: 0 auto;
+        overflow: visible
+    }
+
+    .s3info {
+        font-size: 25px
+    }
+
+}
+
+@media screen and (max-width:480px) {
+
+    .s3info {
+        font-size: 20px
+    }
+
+    .cellTitle p {
+        font-size: 20px
+    }
+
+    .cellText p {
+        font-size: 20px
+    }
+}
+
+@media screen and (max-width:410px) {
+    .dateCover {
+        max-width: 450px;
+        padding: 30px 10px;
+    }
+
+    .dateContent h2 {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 370px) {
+    .dateCover {
+        display: block;
+    }
+}

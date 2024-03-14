@@ -1,0 +1,55 @@
+@media screen and (max-width: 1250px) {
+    .headerBar {
+        max-width: 900px;
+        box-sizing: border-box;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .logoTitle h2 {
+        font-size: 20px;
+        box-sizing: border-box;
+    }
+
+    .headerRight ul li a {
+        font-size: 12px;
+    }
+
+    .headerRight ul li a:hover p::before {
+        bottom: -39px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .headerBar {
+        height: 50px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .headerBlock {
+        display: flex;
+        align-items: center;
+    }
+
+    .logoTitle {
+        margin-left: 50px;
+    }
+
+    .logoTitle::before {
+        left: 0;
+    }
+
+    .logoTitle h2 {
+        font-size: 15px;
+    }
+
+    .headerRight ul li a {
+        font-size: 10px;
+    }
+
+    .headerRight ul li a:hover p::before {
+        bottom: -23px;
+    }
+    
+}
